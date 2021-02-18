@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>formulaire</title>
+</head>
+
+<body>
+
+    <form>
+        <div class="formulaire">
+            <section class="GeneralInfo">
+
+                <h1 class="titre">General Information</h1>
+                <p>
+                    <select name="title" id="title">
+                        <option value="Title">Title</option>
+                        <option value="Dev web">Développeur web</option>
+                        <option value="Ref digital">Référent digital</option>
+                    </select>
+                </p>
+                <div class="line">
+                    <div class="first taille">
+                        <input id="firstname" type="text" placeholder="First Name">
+                    </div>
+                    <div class="last taille">
+                        <input id="lastname" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <p>
+                    <select name="position" id="position">
+                        <option value="">Position</option>
+                        <option value="Nord">Nord</option>
+                        <option value="Sud">Sud</option>
+                        <option value="Est">Est</option>
+                    </select>
+                </p>
+                <p>
+                    <input id="company" type="text" placeholder="Company">
+                </p>
+                <div class="line">
+                    <div class="busarena taille">
+                        <input id="business" type="text" placeholder="Business Arena">
+                    </div>
+                    <div class="emploie taille">
+                        <select name="employees" id="employees">
+                            <option value="">Employées</option>
+                            <option value="employeur">Développeurs</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ContactDetails">
+                <h1 class="titre1">Contact Details</h1>
+                <p>
+                    <input id="street" type="text" placeholder="Street + Nr">
+                </p>
+                <p>
+                    <input id="additional" type="text" placeholder="Additional Information">
+                <p> 
+                <div class="line">
+                    <div class="zipcode taille">
+                        <input id="zipcode" type="text" placeholder="Zip Code">
+                    </div>
+                    <div class="place taille">
+                        <select>
+                            <option value="">place</option>
+                            <option value="Lemba">Lemba</option>
+                            <option value="Ngaliema">Ngaliema</option>
+                            <option value="N'djili">N'djili</option>
+                        </select>
+                    </div>
+                </div>
+                <p>
+                    <select name="country" id="country">
+                        <option value="">Country</option>
+                        <option value="Lemba">RDC</option>
+                        <option value="Ngaliema">RCA</option>
+                        <option value="N'djili">USA</option>
+                    </select>
+                </p>
+                <div class="line">
+                    <div class="codeplus taille">
+                        <input id="code" type="text" placeholder="Code +">
+                    </div>
+                    <div class="phonenumber taille">
+                        <input id="phone" type="number" placeholder="Phone Number">
+                    </div>
+                </div>
+                <p>
+                    <input id="mail" type="email" placeholder="Your Email">
+                </p>
+                <p class="radio-btn">
+                    <input type="radio" id="radio">
+                    <label for="radio">
+                        I do accept the <a href=""><strong> Terms and Conditions </strong></a> of your site.
+                    </label>
+                </p>
+                <input type="submit" value="Register Badge">
+            </section>
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+
+* {
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'AirFactoryRounded';
+    src: url('./AirFactoryRounded/Air Factory Rounded.ttf');
+}
+body{
+    
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #8bc0ec, #9599e2);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family:AirFactoryRounded;
+}
+.formulaire{
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px -10px black;
+    width: 1020px;
+    position: relative;
+    
+}
+
+label{
+    font-size: 14px;
+}
+
+
+select,input{
+    width: 412px ;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+.line input{
+    width: 200px;
+}
+input,select{
+    color: black;
+    font-size: 14px;
+}
+.line select{
+    width: 200px;
+}
+.taille{
+    padding-right: 10px;
+}
+a{
+    color: white;
+   /*  text-decoration: none; c'est pr enlever le soulignement du lien */
+}
+.GeneralInfo input::placeholder{
+    color: black;
+}
+
+
+.GeneralInfo{
+    background-color: white;
+    width: 510px;
+    height: 450px;
+    padding: 60px;
+    padding-top: 20px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+.GeneralInfo input[type=text],select{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.GeneralInfo select{
+    background-color: white;
+}
+.GeneralInfo input:focus, .GeneralInfo select:focus{
+   
+    border-color: black;
+    background-color: white;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+.titre{
+    color: #4479b2;
+    font-size: 25px;
+}
+.titre1{
+    font-size: 25px;
+    color: white;
+}
+.ContactDetails input::placeholder{
+        color: whitesmoke;
+    }
+.ContactDetails{
+    background-color: #4f54d4;
+    width: 510px;
+    height: 450px;
+    padding: 60px;
+    padding-top: 20px;
+    color: white;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+.ContactDetails select{
+    color: white;
+}
+.ContactDetails input[type=text], .ContactDetails input[type=number], .ContactDetails input[type=email]{
+    border: none;
+    border-color: white;
+    background-color: #4f54d4;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.ContactDetails input:focus, .ContactDetails select:focus{
+   
+    border-color: white;
+    background-color: #4f54d4;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+
+.ContactDetails select{
+    background-color: #4f54d4;
+    border-bottom: 1px solid white;
+}
+.ContactDetails input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.radio-btn{
+    display: flex;
+    flex-direction: row;
+}
+.radio-btn input{
+    width: 20px;
+}
+.line .codeplus>input, .line .zipcode>input{
+    width: 100px;
+}
+.line .phonenumber>input, .line .place>select{
+    width: 300px;
+}
