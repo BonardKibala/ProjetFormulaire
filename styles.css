@@ -8,27 +8,30 @@
 }
 body{
     
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom right, #8bc0ec, #9599e2);
-    background-repeat: no-repeat;
+   /* width: 100%;
+    height: 100%; */
+    background-image: linear-gradient(to bottom right, #7bc1ef, #978de5);
     font-size: 16px;
-    padding: 0;
-    margin: 0;
     font-family:AirFactoryRounded;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+form{
+     padding-top: 11vh;
+    padding-bottom: 13vh;
+    /*margin: 0 auto; */
 }
 .formulaire{
-    margin-top: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 150px;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     border-radius: 50px;
     box-shadow: 0px 0px 20px -10px black;
-    width: 1020px;
-    position: relative;
-    
+    line-height: 1.8em;
+    align-content: center;
 }
 
 label{
@@ -48,7 +51,7 @@ select,input{
     width: 200px;
 }
 input,select{
-    color: black;
+    color: #9d9d9d;
     font-size: 14px;
 }
 .line select{
@@ -62,14 +65,15 @@ a{
    /*  text-decoration: none; c'est pr enlever le soulignement du lien */
 }
 .GeneralInfo input::placeholder{
-    color: black;
+    color: #9d9d9d
 }
+
 
 
 .GeneralInfo{
     background-color: white;
     width: 510px;
-    height: 450px;
+    height: 480px;
     padding: 60px;
     padding-top: 20px;
     border-top-left-radius: 20px 20px;
@@ -77,7 +81,7 @@ a{
 }
 .GeneralInfo input[type=text],select{
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9d9d9d;
 }
 .GeneralInfo select{
     background-color: white;
@@ -86,13 +90,13 @@ a{
    
     border-color: black;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9d9d9d;
     outline: none;
 }
 
 
 .titre{
-    color: #4479b2;
+    color: #5c86c8;
     font-size: 25px;
 }
 .titre1{
@@ -103,9 +107,9 @@ a{
         color: whitesmoke;
     }
 .ContactDetails{
-    background-color: #4f54d4;
+    background-color: #6200d8;
     width: 510px;
-    height: 450px;
+    height: 480px;
     padding: 60px;
     padding-top: 20px;
     color: white;
@@ -115,17 +119,17 @@ a{
 .ContactDetails select{
     color: white;
 }
-.ContactDetails input[type=text], .ContactDetails input[type=number], .ContactDetails input[type=email]{
+.ContactDetails input[type=text], .ContactDetails input[type=number], .ContactDetails input[type=email], .ContactDetails input[type=tel]{
     border: none;
     border-color: white;
-    background-color: #4f54d4;
+    background-color: #6200d8;
     border-bottom: 1px solid white;
     color: white;
 }
 .ContactDetails input:focus, .ContactDetails select:focus{
    
     border-color: white;
-    background-color: #4f54d4;
+    background-color: #6200d8;
     border-bottom: 1px solid white;
     outline: none;
     color: white;
@@ -133,27 +137,90 @@ a{
 
 
 .ContactDetails select{
-    background-color: #4f54d4;
+    background-color: #6200d8;
     border-bottom: 1px solid white;
 }
 .ContactDetails input[type=submit]{
-    width: 100px;
-    height: 40px;
+    width: 135px;
+    height: 45px;
     border-radius: 20px;
     border: none;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
+    color: black;
 }
 .radio-btn{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.radio-btn input{
-    width: 20px;
-}
+
 .line .codeplus>input, .line .zipcode>input{
     width: 100px;
 }
 .line .phonenumber>input, .line .place>select{
     width: 300px;
 }
+.line .emploie>select{
+    width: 170px;
+    margin-left: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* Ceci concerne le radio button */
+/*------------------------------------------------------------------*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #f9f7f9;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #f9f7f9;
+  }
+  
+  /* lorsque le radio button est coché, on ajoute une couleur de fond*/
+  .container input:checked ~ .checkmark {
+    background-color: #6c2ea8;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f9f7f9;
+  }
